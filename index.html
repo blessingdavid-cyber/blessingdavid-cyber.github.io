@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ilori Blessing David | Security+ Journey</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap">
+<style>
+:root{--bg:#EEF3F4;--ink:#10242B;--mute:#4F666E;--line:#C0D0D5;--accent:#0F766E;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1B20;--ink:#E6F0F2;--mute:#9DB3BA;--line:#27414A;--accent:#4FD1C5}}
+:root[data-theme="dark"]{--bg:#0D1B20;--ink:#E6F0F2;--mute:#9DB3BA;--line:#27414A;--accent:#4FD1C5}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Source Serif 4",Georgia,serif}
+main{max-width:40rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+.hero{padding:1.5rem 0 2.5rem;border-bottom:1px solid var(--line)}
+.hero p.k{margin:0 0 .5rem;color:var(--mute)}
+.count{font:700 clamp(4.5rem,24vw,8rem)/.9 "Bricolage Grotesque",Arial,sans-serif;color:var(--accent);margin:0}
+.hero h1{font-size:1.6rem;font-weight:500;margin-top:.75rem}
+.hero .sub{color:var(--mute);margin:.75rem 0 0;max-width:30rem}
+section{padding:2.25rem 0 0}
+h2{font-size:1.5rem;margin-bottom:1rem}
+.cert{border-left:4px solid var(--accent);padding:.25rem 0 .25rem 1rem}
+.cert h3{font-size:1.2rem;font-weight:700}
+.cert p{margin:.35rem 0 0;color:var(--mute)}
+.tl{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 1.5rem}
+.tl li::before{content:"";position:absolute;left:calc(-1.5rem - 7px);top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--line)}
+.tl li.done::before{background:var(--accent);border-color:var(--accent)}
+.tl li.now::before{border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 25%,transparent)}
+.tl h3{font-size:1.05rem;font-weight:700}
+.tl .when{font-size:.9rem;color:var(--mute);margin:.1rem 0 .25rem}
+.tl p{margin:0}
+.empty{border:1px dashed var(--line);padding:1.25rem;color:var(--mute);border-radius:6px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+footer{margin-top:2.5rem;color:var(--mute);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <p class="k" id="lead">Days until the CompTIA Security+ exam</p>
+  <p class="count" id="days" aria-live="polite">28</p>
+  <h1>Ilori Blessing David</h1>
+  <p class="sub">My Security+ journey: how I study for CompTIA Security+ (SY0-701), what I learn, and the hands-on projects that come next.</p>
+</header>
+
+<section>
+  <h2>Certifications</h2>
+  <div class="cert">
+    <h3>CompTIA Security+ (SY0-701)</h3>
+    <p>In progress. Exam scheduled for October 31, 2026.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Journey</h2>
+  <ol class="tl">
+    <li class="done"><h3>Finished the Coursera Security+ course</h3><p class="when">Completed</p><p>Worked through the full SY0-701 syllabus.</p></li>
+    <li class="done"><h3>Finished the Infosec Security+ prep</h3><p class="when">Completed</p><p>Scored 91%.</p></li>
+    <li class="done"><h3>Practiced with past questions</h3><p class="when">Completed</p><p>Used the Computer Security Plus app on my iPhone to drill past exam questions.</p></li>
+    <li class="done"><h3>Studied the exam domains one by one</h3><p class="when">Completed</p><p>Worked through each domain with Claude, then tested myself. My scores have improved.</p></li>
+    <li class="now"><h3>Full-length practice exams</h3><p class="when">In progress</p><p>90 questions in 90 minutes, run like the real test, to find weak topics before exam day.</p></li>
+    <li><h3>Take the Security+ exam</h3><p class="when">October 31, 2026</p><p>Pass and earn the certification.</p></li>
+    <li><h3>Choose a specialization</h3><p class="when">After the exam</p><p>Identity and access management, cloud security, or governance, risk and compliance.</p></li>
+    <li><h3>Land the first entry-level IT role</h3><p class="when">Next goal</p><p>Turn the certification into hands-on experience.</p></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Projects and labs</h2>
+  <div class="empty">No projects yet. The first lab will be posted here after the exam.</div>
+</section>
+
+<footer>Last updated October 2026.</footer>
+</main>
+<script>
+(function(){
+  var el=document.getElementById('days'),lead=document.getElementById('lead');
+  var t=new Date(2026,9,31),n=new Date();
+  var d=Math.ceil((new Date(t.getFullYear(),t.getMonth(),t.getDate())-new Date(n.getFullYear(),n.getMonth(),n.getDate()))/864e5);
+  if(d>0){el.textContent=d}
+  else if(d===0){el.textContent='Today';lead.textContent='Exam day'}
+  else{el.textContent='Done';lead.textContent='The exam date has passed'}
+})();
+</script>
+</body>
+</html>
